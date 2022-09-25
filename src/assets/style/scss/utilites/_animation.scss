@@ -1,0 +1,38 @@
+@keyframes bg-star-animation {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    25% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+    }
+}
+
+.bg-img {
+    &.bg-star {
+        /*animation-name: bg-star-animation;
+        animation-duration: 10s;
+        animation-delay: 1s;
+        */
+        animation: bg-star-animation 10s linear 2s infinite normal forwards;
+        -webkit-animation: bg-star-animation 10s linear 2s infinite normal forwards;
+    }
+}

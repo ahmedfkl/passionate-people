@@ -1,0 +1,63 @@
+@import './color';
+.buttons {
+    font-family: 'Monument Extended', sans-serif;
+    height: fit-content;
+    border: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    padding: .5rem .75rem .25rem;
+    cursor: pointer;
+    color: $white;
+    letter-spacing: .1rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .3s;
+    font-size: 1rem;
+    &:hover {
+        background-color: $green-hover !important;
+    }
+    &:focus {
+        outline: 2px dashed $focus-green;
+        outline-offset: 2px;
+    }
+    &.light-btn {
+        background-color: $green;
+    }
+    &.dark-btn {
+        background-color: $blue-dark-btn;
+    }
+}
+
+.burger-btn {
+    border: none;
+    width: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 1rem;
+    position: relative;
+    span {
+        background-color: $white;
+        height: .2rem;
+        width: 100%;
+        display: block;
+        margin-bottom: .25rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:nth-child(2) {
+            height: .15rem;
+        }
+    }
+}
+
+#nav-main-btn {
+    height: 2.25rem;
+}

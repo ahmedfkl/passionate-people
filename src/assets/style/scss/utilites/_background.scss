@@ -1,0 +1,28 @@
+@import "./animation";
+body {
+    background: radial-gradient(circle, #221a3b 0%, #410e72 65%, #5bcca7 100%);
+    .bg-img {
+        position: fixed;
+        z-index: -1;
+        &.bg-img__right {
+            height: 80%;
+            right: -15%;
+            top: -20%;
+        }
+        &.bg-img__left {
+            left: -7%;
+            height: 80%;
+            bottom: -10%;
+        }
+        &.bg-img__right-filled-x {
+            height: 10%;
+            right: 35%;
+            top: 30%;
+        }
+        &.bg-img__left-bordered-x {
+            height: 10%;
+            left: 10%;
+            bottom: 25%;
+        }
+    }
+}

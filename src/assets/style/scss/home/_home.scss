@@ -1,0 +1,26 @@
+@import '../utilites/color';
+.home {
+    width: 80%;
+    .header {
+        padding: 6rem 12rem 0 1.5rem;
+        color: $white;
+        .main-header {
+            line-height: 1.25;
+            font-size: 3.75rem;
+            word-wrap: break-word;
+        }
+        .header-content {
+            margin: 1rem 0 0;
+            p {
+                margin-bottom: 1.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        button {
+            margin-top: 1.5rem;
+            padding: 1rem 2rem;
+        }
+    }
+}
